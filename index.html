@@ -1,0 +1,69 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOL and LOS Cafe</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to LOL and LOS Cafe</h1>
+        <p>Order your favorite biryanis and desserts online!</p>
+    </header>
+
+    <main>
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Our Delicious Menu</h2>
+            <ul id="menu-list">
+                <li><span>Chicken Biryani</span><span>RS 100</span></li>
+                <li><span>Mutton Biryani</span><span>RS 150</span></li>
+                <li><span>Fish Biryani</span><span>RS 200</span></li>
+                <li><span>Prawns Biryani</span><span>RS 250</span></li>
+                <li><span>Gulab Jamun</span><span>RS 10</span></li>
+            </ul>
+        </section>
+
+        <!-- Order Section -->
+        <section id="order">
+            <h2>Place Your Order</h2>
+            <form id="order-form">
+                <label for="item">Select Item:</label>
+                <select id="item" required>
+                    <option value="Chicken Biryani">Chicken Biryani - RS 100</option>
+                    <option value="Mutton Biryani">Mutton Biryani - RS 150</option>
+                    <option value="Fish Biryani">Fish Biryani - RS 200</option>
+                    <option value="Prawns Biryani">Prawns Biryani - RS 250</option>
+                    <option value="Gulab Jamun">Gulab Jamun - RS 10</option>
+                </select>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" placeholder="Enter quantity" required>
+                
+                <button type="button" id="add-to-order">Add to Order</button>
+            </form>
+
+            <div id="order-summary">
+                <h3>Your Order Summary</h3>
+                <ul id="order-items"></ul>
+                <p id="total-bill">Total: RS 0</p>
+                <label for="payment">Mode of Payment:</label>
+                <select id="payment">
+                    <option value="online">Online</option>
+                    <option value="cash">Cash</option>
+                </select>
+                <button id="submit-order">Submit Order</button>
+                <p id="payment-message"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Thank you for choosing LOL and LOS Cafe. We look forward to serving you again!</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f5f8;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px #333;
+}
+
+header p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+section {
+    flex: 1 1 45%;
+    background: white;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #6a11cb;
+    border-bottom: 2px solid #2575fc;
+    padding-bottom: 0.5rem;
+}
+
+/* Menu Section */
+#menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+#menu-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    background: #eef2f3;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Section */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #444;
+}
+
+input, select, button {
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+button {
+    margin-top: 1.5rem;
+    background: #2575fc;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #6a11cb;
+}
+
+/* Order Summary */
+#order-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+#order-items li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    background: #eef2f3;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#total-bill {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #2575fc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: white;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        flex: 1 1 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
